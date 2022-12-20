@@ -1,0 +1,71 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="~/css/formcss.css">
+</head>
+<body>
+    <div class="main">
+        <div class="register">
+            <h2>Registration  form </h2>
+            <form id="register" action=>
+                <label><b>First Name:</b></label>
+                <br>
+                <input type="text" name="lname" id="name" placeholder="Enter First Name " required pattern="[A-Za-z]{0,30}">
+                <br><br>
+                <label><b>Last Name:</b></label>
+                <br>
+                <input type="text" name="lname" id="name" placeholder="Enter last  Name " required pattern="[A-Za-z]{0,30}">
+                <p><b>Classification:</b> </p>
+                <input type="radio" id="fresh" name="classify" value="fresh">
+                <label for="fresh">freshman</label><br>
+                <input type="radio" id="Sophomore" name="classify" value="Sophomore">
+                <label for="Sophomore">Sophomore</label><br>
+                <input type="radio" id="Junior" name="classify" value="Junior">
+                <label for="Junior">Junior</label><br>
+                <input type="radio" id="Senior" name="classify" value="Senior">
+                <label for="Senior">Senior</label><br>
+                <input type="radio" id="Graduate" name="classify" value="Graduate">
+                <label for="Graduate">Graduate</label><br>
+
+                <br>
+                <label><b>Email:</b></label>
+                <br>
+                <input type="email" id="name" placeholder="Enter Email" required>
+                <br><br>
+                <label><b>Phone</b></label>
+                <br>
+                <input type="tel" id="name" placeholder="xxx-xxx-xxxx" required>
+                <br><br>
+
+                <label for="language"> <b>You are best at:</b></label>
+
+                <select id="language">
+                    <option value="Html">Html</option>
+                    <option value="C++">c++</option>
+                    <option value="Java">Java</option>
+
+                </select>
+                <p><b>Programing language you want to learn?</b></p>
+                <input type="radio" id="C" name="fav_language" value="C">
+                <label for="c">C</label><br>
+                <input type="radio" id="C" name="fav_language" value="C#">
+                <label for="C#">C#</label><br>
+                <input type="radio" id="java" name="fav_language" value="Java">
+                <label for="Java">Java</label>
+                <br><br>
+                <input type="Submit" value="Submit" name="Submit" id="submit">
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
